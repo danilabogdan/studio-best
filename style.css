@@ -74,7 +74,7 @@ select {
 }
 
 body {
-    background: rgb(25, 22, 22);
+    background: rgb(28, 28, 28);
 }
 
                 /* navigation start */
@@ -157,10 +157,10 @@ nav a:hover::before {
 }
 
 .item {
-    background: steelblue;
+    background: rgb(0, 0, 0);
     color: white;
     font-size: 20px;
-    border: skyblue 1px solid;
+    /* border: skyblue 1px solid; */
     padding: 20px;
 }
 
@@ -198,3 +198,172 @@ nav a:hover::before {
 /* main layout end!!! and btw this was easy and not to much code with grid*/
 
 
+                /* buttons start */
+
+
+.btn-white {
+    margin: 70px;
+    text-align: center;
+}
+
+.btn-white a {
+    width: 160px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0 10px;
+    color: white;
+    z-index: 1;
+    border: .5px solid white;
+    position: relative;
+    transition: color .5s;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn-white a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: .6s;
+}
+
+.btn-white a:hover span {
+    width: 100%;
+}
+
+.btn-white a:hover {
+    color: black;
+}
+
+
+                /* black btn */
+
+
+.btn-black {
+    margin: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+@media (max-width:760px) {
+    .btn-black {
+        display: none;
+    }
+}
+
+.btn-black a {
+    width: 160px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 0;
+    margin: 0 10px;
+    color: black;
+    background: white;
+    z-index: 1;
+    position: relative;
+    transition: color .5s;
+    border-radius: 3px;
+}
+
+.btn-black a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: .6s;
+}
+
+.btn-black a:hover span {
+    width: 100%;
+}
+
+.btn-black a:hover {
+    color: white;
+    border: none;
+}
+            /* black btn */
+
+
+/* buttons end */
+
+/* btn start */
+
+
+#sideNav {
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: black;
+    color: white;
+    z-index: 2;
+    transition: 0.6s;
+}
+
+.nav-m ul li {
+    list-style: none;
+    margin: 40px 10px;
+}
+
+#acasa {
+    margin-top: 90px;
+}
+
+
+.nav-m ul li a {
+    text-decoration: none;
+    color: white; 
+    /* margin-left: 35px; */
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: #ffffff00;
+    text-align: center;
+    position: fixed;
+    right: 40px;
+    top: 10px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    display: none;
+    width: 20px;
+    margin-top: 15px;
+}
+
+@media (max-width:760px) {
+    #menuBtn img {
+        display: block;
+    }
+}
+
+/* btn end */
+
+
+.wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #07000a), url(images/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

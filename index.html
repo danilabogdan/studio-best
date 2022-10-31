@@ -5,24 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/2b24e01a42.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
     <title>Studio B'est</title>
 </head>
 <body>
     <div class="flex-nav">
         <div class="logo"><img src="./images/logo.png" alt="logo"></div>
-        <nav>
+        <nav id="nav-large">
             <a href="#">Acasă</a>
             <a href="#">Despre</a>
             <a href="#">Servicii</a>
             <a href="#">Prețuri</a>
             <a href="#">Galerie</a>
         </nav>
-        <div class="order-btn">sună</div>
+        <div class="btn-black">
+            <a href="#"> <span></span><i class="fa-solid fa-phone"></i> Sună acum</a>
+        </div>
     </div>
+
+    <!-- mobile  start-->
+
+    <div id="sideNav">
+        <div class="nav-m">
+            <ul>
+                
+                <li id="acasa"><a href="#">Acasă</a></li>
+                <li><a href="#">Despre</a></li>
+                <li><a href="#">Servicii</a></li>
+                <li><a href="#">Prețuri</a></li>
+                <li><a href="#">Galerie</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu" alt="">
+    </div>
+    <!-- mobile  end-->
+
+    
     <div class="grid-container">
-         <div class="item span2 wrapper">item 1</div>
-         <section class="item text">text</section>
+         <div class="item span2 wrapper">
+            <div class="btn-white">
+                <a href="#"> <span></span>Fă o programare</a>
+                <a href="#"> <span></span>Galerie</a>
+            </div>
+         </div>
+         <section class="item text">Lorem ipsum dolo</section>
          <section class="item media">item 3</section>
          <section class="item text">text</section>
          <section class="item media">item 5</section>
