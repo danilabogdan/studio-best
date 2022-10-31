@@ -73,11 +73,84 @@ select {
   }
 }
 
+body {
+    background: rgb(25, 22, 22);
+}
+
+                /* navigation start */
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    background: black;
+    color: white;
+    height: 70px;
+}
+
+
+.logo {
+    /* background: black; */
+    width: 90px;
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 24px;
+    position: relative;
+}
+
+nav a:hover {
+    color: rgb(226, 226, 226);
+}
+
+nav a::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    margin-top: 28px;
+    transition: all ease-in-out 280ms;
+}
+
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+.order-btn {
+    margin-right: 30px;
+}
+
+
+@media (max-width:760px) {
+    nav {
+        display: none;
+    }
+    .order-btn {
+        margin-right: 120px;
+        z-index: 99;
+    }
+}
+/* navigation end */
+
+
+                /* main layout start */
+
 
 .grid-container {
     display: grid;
     max-width: 1024px;
-    margin: 100px auto;
+    margin: 0px auto;
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem; 
@@ -120,4 +193,8 @@ select {
         grid-column: 1 / span 2;
     }
 }
+
+
+/* main layout end!!! and btw this was easy and not to much code with grid*/
+
 
