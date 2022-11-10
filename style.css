@@ -74,7 +74,8 @@ select {
 }
 
 body {
-    background:white;
+    background-image: url(images/white-painted-wall-texture-background.jpg);
+    background-repeat: repeat;
 }
 
 /* ******************* NAVIGATION START ********************* */
@@ -149,7 +150,7 @@ nav a:hover::before {
 
 
 #sideNav {
-    width: 160px;
+    width: 220px;
     height: 100vh;
     position: fixed;
     right: -250px;
@@ -458,15 +459,12 @@ nav a:hover::before {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background: rgb(25, 25, 25);
+    background: transparent;
     min-height: 450px;
     max-height: fit-content;
 }
 
 
-#bg-25 {
-    background: rgb(25, 25, 25);
-}
 
 
 
@@ -483,6 +481,8 @@ nav a:hover::before {
     align-items: center;
     text-align: center;
     padding: 30px;
+    background: white;
+    /* border-bottom: 1px solid #F15025; */
 }
 
 .servicii a {
@@ -503,6 +503,7 @@ nav a:hover::before {
     align-items: center;
     text-align: center;
     padding: 30px;
+    background: white;
 }
 
 
@@ -545,6 +546,18 @@ nav a:hover::before {
 
 #btn-0-margin {
     margin: 0;
+}
+
+
+.border-none {
+    box-shadow: none;
+    border: none;
+}
+
+
+.item img {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
 }
 
 /* ******************* TESTING ********************* */
