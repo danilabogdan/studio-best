@@ -102,17 +102,18 @@ body {
 .logo {
     /* background: black; */
     width: 90px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
     letter-spacing: 1px;
     margin-left: 24px;
     position: relative;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.4);
 }
 
 nav a:hover {
@@ -135,8 +136,8 @@ nav a:hover::before {
 }
 
 
-.order-btn {
-    margin-right: 30px;
+#top-btn {
+    margin-right: 50px;
 }
 
 
@@ -175,10 +176,11 @@ nav a:hover::before {
 
 .nav-m ul li a {
     text-decoration: none;
-    color: white; 
+    color:white; 
     font-weight: 500;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 21px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
 }
 
 
@@ -189,7 +191,7 @@ nav a:hover::before {
     background: #ffffff00;
     text-align: center;
     position: fixed;
-    right: 40px;
+    right: 20px;
     top: 10px;
     border-radius: 3px;
     z-index: 99;
@@ -386,10 +388,10 @@ nav a:hover::before {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(400px, auto);
     gap: 2rem; 
-}
+} 
 
 .item {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
     border-radius: 5px;
     /* min-height: 450px; */
 
@@ -449,6 +451,7 @@ nav a:hover::before {
     color: black;
     border-radius: 5px;
     /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .despre h3 {
@@ -494,6 +497,7 @@ nav a:hover::before {
     background: white;
     border-radius: 5px;
     /* border-bottom: 1px solid #F15025; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .servicii a {
@@ -516,6 +520,7 @@ nav a:hover::before {
     padding: 30px;
     background: white;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 
@@ -583,25 +588,31 @@ nav a:hover::before {
 /* ******************* PARTNERS SECTION END  ********************* */
 
 
-/* ******************* MAP SECTION START  ********************* */
+/* ******************* SCHEDULE SECTION START  ********************* */
 
-.map {
+.orar {
+    background: white;
+    max-width: auto;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    padding: 50px 40px;
     border-radius: 5px;
+    margin-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.map h1 {
-    padding: 24px;
+
+.orar h1 {
+    color: #F15025;
 }
 
-iframe {
-    border-radius: 8px;
+.orar h2 span {
+    color: #dc0404;
 }
 
-/* ******************* MAP SECTION END  ********************* */
+/* ******************* SCHEDULE SECTION END  ********************* */
 
 
 
@@ -639,18 +650,70 @@ iframe {
     border-radius: 5px;
 }
 
+
+
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ******************* TESTING ********************* */
+
+
+/* ******************* FOOTER SECTION START ********************* */
 
 
 
 .my-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 60px;
+    height: 70px;
     background: rgb(25, 25, 25);
     margin-top: auto;
     color: white;
 }
+
+.attributes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-left: 50px; */
+}
+
+.social img {
+    width: 21px;
+}
+
+#danila-bogdan {
+    text-decoration: none;
+    color: white;
+}
+
+#heart {
+    color: #dc0404;
+}
+
+
+.attributes #icon-1 {
+    margin-left: 80px;
+    padding-top: 10px;
+}
+
+.attributes i {
+    margin-left: 25px;
+}
+
+/* ******************* FOOTER SECTION END ********************* */
