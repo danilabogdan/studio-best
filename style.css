@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 /* Box sizing rules */
 *,
 *::before,
@@ -73,6 +82,12 @@ select {
   }
 }
 
+
+* {
+    /* font-family: 'Poppins' , sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     background: white;
     min-height: 100vh;
@@ -99,9 +114,19 @@ body {
 
 
 .logo {
-    /* background: black; */
-    width: 90px;
-    margin-left: 50px;
+    width: auto;
+    margin-left: 40px;
+}
+
+.logo h1 {
+    font-size: 23px;
+}
+
+.logo h1 span i {
+    font-size: 8px;
+    padding-bottom: 21px;
+    padding-left: 0;
+    padding-right: 5px;
 }
 
 nav a {
@@ -230,7 +255,7 @@ nav a:hover::before {
 }
 
 .btn-white a {
-    width: 160px;
+    width: 180px;
     text-decoration: none;
     display: inline-block;
     padding: 12px 0;
@@ -243,7 +268,7 @@ nav a:hover::before {
     border-radius: 4px;
     overflow: hidden;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .btn-white a span {
@@ -262,7 +287,7 @@ nav a:hover::before {
 }
 
 .btn-white a:hover {
-    color:#F15025;
+    color:black;
 }
 
 
@@ -311,10 +336,16 @@ nav a:hover::before {
 }
 
 .btn-black a:hover {
-    color: #F15025;
+    color: white;
     border: none;
 }
 
+
+@media (max-width:960px) {
+    .btn-black {
+        width: 0px;
+    }
+}
 
 @media (max-width:760px) {
     .btn-black {
@@ -389,9 +420,8 @@ nav a:hover::before {
 } 
 
 .item {
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
     border-radius: 5px;
-    /* min-height: 450px; */
+    min-height: 450px;
 
 }
 
@@ -403,7 +433,7 @@ nav a:hover::before {
 
 @media (max-width:760px) {
     .grid-container{
-        margin-top: 70px;
+        margin-top: 80px;
     }
     .item {
         grid-column: 1 / span 2;
@@ -418,7 +448,7 @@ nav a:hover::before {
 
 
 .wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #07000a), url(images/main.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #07000a), url(images/main-cover.jpg);
     background-position: center;
     background-repeat: no-repeat;
     height: 85vh;
@@ -428,9 +458,42 @@ nav a:hover::before {
     align-items: center;
     color: white;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.wrapper h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
 
+.wrapper p {
+    font-size: 21px;
+    /* padding: 15px; */
+}
+.inverted {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.inverted i {
+    transform: rotate(180deg);
+    font-weight: 700;
+}
+
+.inverted p {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.inverted span {
+    font-size: 38px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 8px;
+}
 /* ******************* HERO SECTION STYLE END ********************* */
 
 
@@ -448,7 +511,6 @@ nav a:hover::before {
     background: white;
     color: black;
     border-radius: 5px;
-    /* border: 2px solid red; */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -464,15 +526,17 @@ nav a:hover::before {
     margin-top: 60px;
 }
 
-
 .center {
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    background: #353535;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border-radius: 5px;
-    background: transparent;
-    min-height: 450px;
-    max-height: fit-content;
+}
+
+.center img {
+    max-height: 450px;
 }
 
 
@@ -566,7 +630,7 @@ nav a:hover::before {
 }
  
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 760px) {
     
     .card-tall {
         grid-row: span 2 / auto;
@@ -653,6 +717,30 @@ nav a:hover::before {
 /* ******************* PARTNERS SECTION END  ********************* */
 
 
+/* ******************* CURSURI SECTION START  ********************* */
+
+.text-cursuri h1 {
+    padding: 30px 40px;
+}
+
+
+.text-cursuri h2 {
+    padding: 30px 40px;
+}
+
+
+.text-cursuri h3 {
+    padding: 20px 40px;
+}
+
+
+.text-cursuri ul li {
+    padding: 8px;
+}
+
+/* ******************* CURSURI SECTION END  ********************* */
+
+
 /* ******************* SCHEDULE SECTION START  ********************* */
 
 .orar {
@@ -709,10 +797,11 @@ nav a:hover::before {
     border: none;
 }
 
-
-.item img {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 5px;
+h1 span i {
+    font-size: 16px;
+    transform: rotate(160deg);
+    padding-top:32px;
+    padding-right:8px;
 }
 
 
