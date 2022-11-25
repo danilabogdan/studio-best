@@ -913,7 +913,7 @@ ul li p {
 }
 
 .table-choice {
-    min-width: 400px;
+    min-width: 350px;
     text-align: center;
     color: #555;
 }
@@ -926,7 +926,7 @@ ul li p {
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 
