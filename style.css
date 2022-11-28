@@ -141,10 +141,10 @@ body {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-left: 24px;
+    margin-left: 18px;
     position: relative;
     text-shadow: 0px 0px 6px rgba(255,255,255,0.4);
 }
@@ -166,11 +166,6 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
-}
-
-
-#top-btn {
-    margin-right: 50px;
 }
 
 @media (max-width:970px) {
@@ -209,7 +204,7 @@ nav a:hover::before {
 }
 .nav-m ul li {
     list-style: none;
-    margin: 40px 40px;
+    margin: 40px 0px;
 }
 
 
@@ -557,6 +552,84 @@ nav a:hover::before {
 }
 
 
+#despre-noi {
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#despre-noi .our-story h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:black;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+#despre-noi .our-story h2::after {
+    content: '';
+    background: #F15025;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    left: 0;
+    height: 10px;
+}
+
+
+
+#despre-noi-first-p {
+    font-size: 22px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+
+#despre-noi-second-p  {
+    font-size: 17px;
+}
+
+.icons-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.salon-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.salon-icons i {
+    margin-right: 55px;
+}
+
+
+
+
+.more-info {
+    /* border: 2px solid #f1512568; */
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+@media (max-width:760px) {
+    .icons-info {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-left: 50px; */
+    }
+    .salon-icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
 
 
 

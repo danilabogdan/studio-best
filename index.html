@@ -11,17 +11,18 @@
 </head>
 <body>
     <div class="flex-nav" id="navbar">
-        <div class="logo"><h1 style="font-family: 'Dancing Script', cursive; font-weight:700;
-            ">Studio B<span><i class="fa-solid fa-star-half-stroke"></i></span>est</h1></div>
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:white;"><h1 style="font-family: 'Dancing Script', cursive; font-weight:700;
+            ">Studio B<span><i class="fa-solid fa-star-half-stroke"></i></span>est</h1></a></div>
         <nav id="nav-large">
             <a href="index.html">Acasă</a>
-            <a href="#despre">Despre</a>
-            <a href="#">Servicii</a>
+            <a href="#scroll-despre">Despre</a>
+            <a href="#servicii">Servicii</a>
+            <a href="programari.html">Programări</a>
             <a href="galerie.html">Galerie</a>
-            <a href="#">Cursuri</a>
+            <a href="#scroll-cursuri">Cursuri</a>
         </nav>
         <div class="btn-black">
-            <a id="top-btn" href="#"> <span></span>Fă o programare</a>
+            <a id="top-btn" href="programari.html"> <span></span>Fă o programare</a>
         </div>
     </div>
 
@@ -35,8 +36,9 @@
             
             <ul>
                 <li id="acasa"><a href="index.html">Acasă</a></li>
-                <li><a href="#">Despre</a></li>
-                <li><a href="#">Servicii</a></li>
+                <li><a href="#despre-noi">Despre</a></li>
+                <li><a href="#servicii">Servicii</a></li>
+                <li><a href="programari.html">Programări</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="#">Cursuri</a></li>
             </ul>
@@ -56,9 +58,26 @@
             <p class="cursive-font">„Calitatea, nu cantitatea”</p>
             <div class="btn-white">
                 <a href="programari.html"> <span></span>Fă o programare</a>
-                <a href="#"> <span></span>Înscrieri cursuri</a>
+                <a href="#scroll-cursuri" id="scroll-despre" ><span></span>Înscrieri cursuri</a>
             </div>
          </div>
+
+         <section class="item span2" id="despre-noi">
+            <div class="our-story">
+                <h2>Povestea noastră</h2>
+            </div>
+            <p style="text-indent:15px;" id="despre-noi-first-p">Bine ai venit in familia Studio B'est.</p>
+            <p id="despre-noi-second-p">Povestea noastră a început în anul 2020, an în care am hotărât să dăm aripi visului de a realiza o afacere pe baza pasiunii ce ne unește.Calitatea este principalul obiectiv pe care vrem să îl atingem, lucru care se reflectă și în imaginea salonul realizat într-o abordare modernă. Vino în salonul nostru și te vei convinge singur de calitatea serviciilor noastre, și de experiența plăcută de care vei avea parte din momentul în care ne treci pragul.</p>
+            <div class="icons-info">
+                <div class="salon-icons">
+                    <i class="fa-solid fa-wifi fa-2x"></i>
+                    <i class="fa-solid fa-bottle-water fa-2x" id="water-bottle"></i>
+                    <i class="fa-solid fa-gamepad fa-2x"></i>
+                    <i class="fa-solid fa-music fa-2x" id="music"></i>
+                </div>
+                <div class="more-info"><p><i>„Noi încercăm să fim punctuali dar dacă vii mai repede te poți relaxa cu o băutură din partea noastră,wifi și muzică la discreție.”</i></p></div>
+            </div>
+         </section>
 
          <section class="item">
             <div class="despre">
@@ -67,7 +86,7 @@
                 <h3>Lorem ipsum dolor sit.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora tenetur fuga, eaque ullam in iste maxime nam ab beatae quo.</p>
                 <div class="btn-black-full" id="btn-0-margin">
-                    <a href="#"> <span></span>Află mai multe</a>
+                    <a href="#" id="servicii"> <span></span>Află mai multe</a>
                 </div>
             </div>
          </section>
@@ -103,23 +122,16 @@
             </div>
          </section>
 
-         <section class="item">
+         <section class="item span2">
             <div class="galerie">
                 <h2>Lorem, ipsum dolor.</h2>
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, itaque.</p>
                 <div class="btn-black-full" id="btn-0-margin">
-                    <a href="#"> <span></span>Galerie</a>
+                    <a href="galerie.html"  id="scroll-cursuri"><span></span>Galerie</a>
                 </div>
             </div>
          </section>
-
-         <section class="item border-none">
-            <div class="center">
-                <img src="images/pic-2.jpg" alt="">
-            </div>
-         </section>
-
         
 
          <section class="item span2">
