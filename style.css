@@ -378,13 +378,14 @@ nav a:hover::before {
 
 
 .btn-black-full a {
-    width: 160px;
+    font-family: 'Poppins';
+    width: 170px;
     text-decoration: none;
     display: inline-block;
     padding: 12px 0;
     margin: 0 10px;
-    color: white;
-    background: rgb(25, 25, 25);
+    color: black;
+    background: rgb(251, 249, 249);
     z-index: 1;
     position: relative;
     transition: color .5s;
@@ -399,7 +400,7 @@ nav a:hover::before {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
+    background: black;
     z-index: -1;
     transition: .6s;
 }
@@ -409,7 +410,7 @@ nav a:hover::before {
 }
 
 .btn-black-full a:hover {
-    color: black;
+    color: white;
 }
 
 /* ******************* BUTTONS END ********************* */
@@ -432,7 +433,8 @@ nav a:hover::before {
 
 .item {
     border-radius: 5px;
-    min-height: 450px;
+    /* min-height: 450px; */
+    overflow: hidden;
 
 }
 
@@ -609,7 +611,7 @@ nav a:hover::before {
 
 
 .more-info {
-    /* border: 2px solid #f1512568; */
+    color: #F15025;
     padding: 10px;
     max-width: 300px;
     border-radius: 5px;
@@ -625,7 +627,7 @@ nav a:hover::before {
     }
     .salon-icons {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 10px;
         width: 100%;
     }
@@ -646,9 +648,8 @@ nav a:hover::before {
     align-items: center;
     text-align: center;
     padding: 30px;
-    background: white;
+    color: white;
     border-radius: 5px;
-    /* border-bottom: 1px solid #F15025; */
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -945,6 +946,39 @@ ul li p {
 
 /* ":has" seems to be a very strong selector */
 
+
+
+.services-bg-image {
+    background-image: url(images/services-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-class {
+    display: block;
+    width:30%;
+    padding: 20px 0;
+    border-radius: 8%;
+}
+
+
+.three-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #6e6e6e4c;
+}
+
+
+@media (max-width:760px) {
+    .img-class {
+        height: auto;
+        padding: 0;
+    }
+
+}
+
+
 /* ******************* TESTING ********************* */
 
 
@@ -1057,6 +1091,87 @@ tbody tr td{
 
 
 /* ******************* PROGRAMARI SECTION END ********************* */
+
+/* ******************* CAROUSEL SECTION START ********************* */
+
+
+
+
+.img-carousel {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.img-carousel ul {
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 230ms opacity ease-in-out;
+    transition-delay: 230ms;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0;
+    z-index: 10;
+}
+
+.carousel-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 60px;
+    top: 50%;
+    z-index: 11;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(85, 85, 85, 0.524);
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+    color: white;
+    background-color: rgba(1, 1, 1, 0.405);
+}
+
+
+.carousel-btn.previous-img {
+    left: 5px;
+}
+
+.carousel-btn.next-img {
+    position: absolute;
+    right: 5px;
+}
+
+@media (max-width:760px) {
+    .img-carousel {
+        height: 65vh;
+    }
+}
+
+
+/* ******************* CAROUSEL SECTION END ********************* */
+
+
+
+
 
 
 /* ******************* FOOTER SECTION START ********************* */
