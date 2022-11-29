@@ -843,7 +843,7 @@ nav a:hover::before {
     align-items: center;
     padding: 50px 40px;
     border-radius: 5px;
-    margin-bottom: 24px;
+    margin:14px auto;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -993,19 +993,18 @@ ul li p {
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color:#009879;
+    color:#353535;
 }
 
 
 #span-2 {
     content: '';
     position: absolute;
-    color: #009879;
-    background: #009879;
-    width: 100%;
+    background: #F15025;
+    width: 10%;
     height: 10px;
     bottom:0;
-    left: 0;
+    left: 50px;
 }
 
 .table-flex {
@@ -1044,7 +1043,7 @@ ul li p {
 
 
 .content-table thead tr {
-    background-color: #009879;
+    background-color: #F15025;
     color: white;
     text-align: left;
     font-weight: bold;
@@ -1099,7 +1098,7 @@ tbody tr td{
 
 .img-carousel {
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -1120,6 +1119,7 @@ tbody tr td{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
 }
 
 
