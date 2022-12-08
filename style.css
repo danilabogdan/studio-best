@@ -52,6 +52,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
@@ -949,7 +950,7 @@ ul li p {
 
 
 .services-bg-image {
-    background-image: url(images/services-bg.jpg);
+    background: #353535;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -977,6 +978,45 @@ ul li p {
     }
 
 }
+
+.button-arrow {
+    position: fixed;
+    z-index: 99;
+    bottom: 50px;
+    right: 50px;
+    border: none;
+    width: 60px;
+    height: 50px;
+    background: rgba(30, 30, 30, 0.412);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button-arrow:hover, .button-arrow:focus {
+    background: rgba(2, 2, 2, 0.628);
+}
+
+.button-arrow a {
+    border: none;
+    color: white;
+}
+
+
+@media (max-width:760px) {
+    .button-arrow {
+        bottom: 30px;
+        right: 20px;
+        background: rgba(30, 30, 30, 0.272);
+        width: 45px;
+    }
+    .button-arrow a {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.682);
+    }
+}
+
+
+
 
 
 /* ******************* TESTING ********************* */
@@ -1133,14 +1173,14 @@ tbody tr td{
     position: absolute;
     background: none;
     border: none;
-    font-size: 60px;
+    font-size: 40px;
     top: 50%;
     z-index: 11;
     transform: translateY(-50%);
     color: rgba(255,255,255,0.6);
     cursor: pointer;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     background-color: rgba(85, 85, 85, 0.524);
 }
 
